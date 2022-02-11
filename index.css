@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 150px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+}
+.container {
+  display: block;
+  padding: 20px;
+}
+.col {
+  margin-bottom: 16px;
+  padding: 16px;
+  text-align: center;
+}
+h2 {
+  color: green;
+}
+.image {
+  margin: 20px;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 648px) {
+  .container {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
